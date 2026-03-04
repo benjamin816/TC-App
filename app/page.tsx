@@ -2,7 +2,7 @@ import { getTransactions } from '@/lib/google-sheets';
 import PipelineBoard from '@/components/PipelineBoard';
 import Navbar from '@/components/Navbar';
 import { getServerSession } from 'next-auth';
-import { authOptions } from './api/auth/[...nextauth]/route';
+import { authOptions } from '@/lib/auth';
 import { LayoutDashboard, Filter, Search } from 'lucide-react';
 
 export default async function DashboardPage() {

@@ -30,7 +30,7 @@ export default function Navbar() {
           <span className="font-serif italic text-xl tracking-tight">RE-Sync</span>
         </div>
         <button 
-          onClick={() => signIn('google')}
+          onClick={() => signIn('google', { callbackUrl: '/' })}
           className="bg-emerald-600 text-white px-4 py-2 rounded-lg font-medium hover:bg-emerald-700 transition-colors"
         >
           Sign In
